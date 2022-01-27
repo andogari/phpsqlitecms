@@ -1,6 +1,6 @@
 <?php
 // autoload required classes:
-function spl_autoload_register($class_name)
+function __autoload($class_name)
  {
   require_once(BASE_PATH.'cms/includes/classes/'.$class_name.'.class.php');
  }
